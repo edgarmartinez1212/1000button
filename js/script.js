@@ -8,6 +8,12 @@ function incrementByOne() {
   let num = Number(timesClickedNumEl.textContent) + 1;
   timesClickedNumEl.textContent = num;
 
+  if (num === 3) {
+    setTimeout(function () {
+      alert("Congrats on 3 clicks!\nContinue to 1000!");
+    }, 100);
+  }
+
   if (num === 1000) {
     setTimeout(function () {
       alert("Congrats!");
